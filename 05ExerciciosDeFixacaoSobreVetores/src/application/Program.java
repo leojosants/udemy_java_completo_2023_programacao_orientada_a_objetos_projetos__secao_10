@@ -20,8 +20,7 @@ public class Program {
 		fillNumbersVector(scanner, numbersVector);
 
 		displayLargestNumber(numbersVector);
-//		displayTotalAmountOfEvenNumbers(numbersVector);
-
+		
 		scanner.close();
 
 		System.out.println("\n-> fim do programa");
@@ -101,18 +100,5 @@ public class Program {
 			System.out.printf("\nMaior valor: %.2f%n", largestNumber);
 			System.out.printf("Posição do maior valor: %d%n", positionOfTheLargestNumber);
 		}
-
-	}
-
-	private static void displayTotalAmountOfEvenNumbers(int[] numbersVector) {
-		int total = 0;
-
-		for (int i = 0; i < numbersVector.length; i++) {
-			if ((numbersVector[i] % 2) == 0) {
-				total++;
-			}
-		}
-
-		System.out.printf("\nQuantidade de números pares: %d%n", total);
 	}
 }
